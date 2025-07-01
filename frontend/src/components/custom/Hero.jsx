@@ -60,7 +60,7 @@ export const Hero = () => {
             setMessages((prev)=>[...prev,userMsg,loadingBotMsg]);
             setUserInput("");
             
-            const resp = await axios.post('http://localhost:3000/research', {userMsg})
+            const resp = await axios.post('https://lexis-ai-assistant.onrender.com/research', {userMsg})
            
             const botMsg = {
                 id: crypto.randomUUID(), 
@@ -91,7 +91,7 @@ export const Hero = () => {
         )
 
         try{
-            const res = await axios.post("http://localhost:3000/documents",formData,{
+            const res = await axios.post("https://lexis-ai-assistant.onrender.com/documents",formData,{
                 header: {
                     'Content-Type': 'multipart/form-data',}
             })
