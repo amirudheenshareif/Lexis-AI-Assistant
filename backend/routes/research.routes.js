@@ -20,6 +20,7 @@ router.post("/", async (req, res) => {
 
     res.send({
         forQuery:userQuery,
+        docContext:docContext,
         role: "bot",
         botResponse: botResponse,
     })
