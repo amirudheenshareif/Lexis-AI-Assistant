@@ -19,6 +19,6 @@ app.use("/research", researchRoutes);
 // app.use("/research", researchRoutes);
 
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log("Server Running on Port 3000");
 })
