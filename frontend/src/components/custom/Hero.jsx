@@ -181,7 +181,7 @@ export const Hero = () => {
                     {quickQueries.map((query)=> (
                         <p 
                         key={query}
-                        className='w-full p-2 text-sm rounded-md bg-slate-600/50 hover:bg-slate-300 hover:text-black cursor-pointer'
+                        className='w-full p-2 text-sm rounded-md bg-slate-600/50 active:bg-slate-300 active:text-black cursor-pointer'
                         onClick = {() => setUserInput(query)}
                         
                         >{query}</p>
